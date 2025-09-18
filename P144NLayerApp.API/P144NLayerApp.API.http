@@ -1,0 +1,6 @@
+@P144NLayerApp.API_HostAddress = http://localhost:5004
+
+GET {{P144NLayerApp.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
