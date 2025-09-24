@@ -1,0 +1,494 @@
+2025-09-23 19:40:29.209 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 19:40:29.219 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 19:40:29.227 +04:00 [INF] Hosting environment: Development
+2025-09-23 19:40:29.229 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 19:40:30.207 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 1006.7374ms
+2025-09-23 19:40:30.219 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 19:40:34.650 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - null null
+2025-09-23 19:40:34.650 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 19:40:34.719 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 69.0177ms
+2025-09-23 19:40:34.919 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 null text/javascript; charset=UTF-8 269.1132ms
+2025-09-23 19:40:35.036 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/openapi/v1.json - null null
+2025-09-23 19:40:35.053 +04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-09-23 19:40:35.191 +04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-09-23 19:40:35.311 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/openapi/v1.json - 200 null application/json;charset=utf-8 274.4579ms
+2025-09-23 19:42:10.853 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - null null
+2025-09-23 19:42:10.888 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 35.2908ms
+2025-09-23 19:42:43.782 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------099515429555818005690979 5569
+2025-09-23 19:42:43.788 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 5.8191ms
+2025-09-23 19:42:43.807 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------321701175756651280909085 5569
+2025-09-23 19:42:43.811 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 19:42:43.871 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 19:42:45.093 +04:00 [INF] GetAllmethod call! 
+2025-09-23 19:43:08.511 +04:00 [ERR] An error occurred using the connection to database 'M144NLayer' on server 'AFIQ'.
+2025-09-23 19:43:08.531 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'P144NLayerApp.DAL.Context.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2025-09-23 19:45:23.722 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 19:45:23.739 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 19:45:23.776 +04:00 [INF] Hosting environment: Development
+2025-09-23 19:45:23.801 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 19:45:24.062 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 353.7151ms
+2025-09-23 19:45:24.083 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 19:45:27.977 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 19:45:27.977 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - null null
+2025-09-23 19:45:28.016 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 39.0424ms
+2025-09-23 19:45:28.070 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.4701ms
+2025-09-23 19:45:28.171 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/openapi/v1.json - null null
+2025-09-23 19:45:28.219 +04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-09-23 19:45:28.330 +04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-09-23 19:45:28.334 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/openapi/v1.json - 200 null application/json;charset=utf-8 163.469ms
+2025-09-23 19:45:32.661 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - null null
+2025-09-23 19:45:32.667 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 7.1568ms
+2025-09-23 19:45:39.947 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------708931638125767037441880 5569
+2025-09-23 19:45:39.952 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 5.5915ms
+2025-09-23 19:45:39.964 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------790448612767531554022459 5569
+2025-09-23 19:45:39.968 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 19:45:40.006 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 19:45:40.283 +04:00 [INF] GetAllmethod call! 
+2025-09-23 19:45:45.804 +04:00 [INF] Executed DbCommand (175ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-23 19:45:45.925 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[P144NLayerApp.BusinessLayer.DTO.ProductGetAllDto, P144NLayerApp.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-23 19:45:45.940 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 5929.734ms
+2025-09-23 19:45:45.943 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 19:45:45.958 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 200 null application/json; charset=utf-8 5993.7941ms
+2025-09-23 19:45:57.964 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - null null
+2025-09-23 19:45:57.978 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 13.8098ms
+2025-09-23 19:45:58.833 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - null null
+2025-09-23 19:45:58.836 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 3.3508ms
+2025-09-23 19:45:58.923 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - null null
+2025-09-23 19:45:58.929 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 5.8777ms
+2025-09-23 19:45:59.116 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - null null
+2025-09-23 19:45:59.134 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 24.5345ms
+2025-09-23 19:45:59.303 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - null null
+2025-09-23 19:45:59.308 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 3.7696ms
+2025-09-23 19:45:59.516 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - null null
+2025-09-23 19:45:59.527 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 11.6479ms
+2025-09-23 19:46:11.517 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------246323019962863928022811 5569
+2025-09-23 19:46:11.519 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 2.726ms
+2025-09-23 19:46:11.522 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------792608942899268164606114 5569
+2025-09-23 19:46:11.524 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 19:46:11.532 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 19:46:11.544 +04:00 [INF] GetAllmethod call! 
+2025-09-23 19:46:11.576 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[P144NLayerApp.BusinessLayer.DTO.ProductGetAllDto, P144NLayerApp.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-23 19:46:11.580 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 40.3687ms
+2025-09-23 19:46:11.581 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 19:46:11.585 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 200 null application/json; charset=utf-8 62.5483ms
+2025-09-23 19:51:59.411 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 19:51:59.460 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 19:51:59.464 +04:00 [INF] Hosting environment: Development
+2025-09-23 19:51:59.466 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 19:51:59.682 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 275.9848ms
+2025-09-23 19:51:59.713 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 19:52:04.251 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------224849277369746716282908 5569
+2025-09-23 19:52:04.320 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 69.3259ms
+2025-09-23 19:52:04.337 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------620821146401064660475121 5569
+2025-09-23 19:52:04.344 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 19:52:04.374 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 19:52:04.590 +04:00 [INF] GetAll method call! 
+2025-09-23 19:52:09.813 +04:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-23 19:52:09.909 +04:00 [INF] GetAll method finish
+2025-09-23 19:52:09.921 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[P144NLayerApp.BusinessLayer.DTO.ProductGetAllDto, P144NLayerApp.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-23 19:52:09.939 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 5560.5203ms
+2025-09-23 19:52:09.943 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 19:52:09.953 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 200 null application/json; charset=utf-8 5616.1903ms
+2025-09-23 19:54:24.400 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 19:54:24.368 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 19:54:24.367 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------847630588794687840874556 5569
+2025-09-23 19:54:24.459 +04:00 [INF] Hosting environment: Development
+2025-09-23 19:54:24.465 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 19:54:24.576 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 216.5633ms
+2025-09-23 19:54:24.580 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------238190494926981293751485 5569
+2025-09-23 19:54:24.607 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 19:54:24.638 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 19:54:24.684 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 289.1661ms
+2025-09-23 19:54:24.687 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 19:54:26.120 +04:00 [INF] GetAll method call! 
+2025-09-23 19:54:34.574 +04:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-23 19:54:52.093 +04:00 [ERR] GetAll method error occured when call!
+System.NullReferenceException: User data is null!
+   at P144NLayerApp.BusinessLayer.Impl.ProductService.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.BusinessLayer\Impl\ProductService.cs:line 65
+   at P144NLayerApp.API.Controllers.ProductController.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 30
+2025-09-23 19:54:55.201 +04:00 [INF] GetAll method finish
+2025-09-23 19:54:55.212 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 30569.2663ms
+2025-09-23 19:54:55.215 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 19:54:55.220 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: User data is null!
+   at P144NLayerApp.API.Controllers.ProductController.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-23 19:54:55.242 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 500 null text/plain; charset=utf-8 30662.2165ms
+2025-09-23 19:58:02.965 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------781071749674768264435916 5569
+2025-09-23 19:58:02.969 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 4.1268ms
+2025-09-23 19:58:02.995 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------561155775977101387087552 5569
+2025-09-23 19:58:02.997 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 19:58:03.001 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 19:58:03.009 +04:00 [INF] GetAll method call! 
+2025-09-23 19:58:07.079 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-23 20:01:47.530 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 20:01:47.538 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 20:01:47.548 +04:00 [INF] Hosting environment: Development
+2025-09-23 20:01:47.550 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 20:01:47.741 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 221.7482ms
+2025-09-23 20:01:47.757 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 20:01:50.809 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------507462172012150701811499 5569
+2025-09-23 20:01:50.851 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 43.1592ms
+2025-09-23 20:01:50.869 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------195872122986491828130008 5569
+2025-09-23 20:01:50.875 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 20:01:50.920 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 20:01:51.154 +04:00 [WRN] GetAll method call! 
+2025-09-23 20:01:56.286 +04:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-23 20:01:56.385 +04:00 [INF] GetAll method finish
+2025-09-23 20:01:56.403 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[P144NLayerApp.BusinessLayer.DTO.ProductGetAllDto, P144NLayerApp.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-23 20:01:56.422 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 5495.2776ms
+2025-09-23 20:01:56.424 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 20:01:56.437 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 200 null application/json; charset=utf-8 5568.7503ms
+2025-09-23 20:09:04.742 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 20:09:04.784 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 20:09:04.787 +04:00 [INF] Hosting environment: Development
+2025-09-23 20:09:04.789 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 20:09:04.950 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 216.36ms
+2025-09-23 20:09:04.968 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 20:09:08.119 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------920423085512492514542767 5569
+2025-09-23 20:09:08.161 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 42.7625ms
+2025-09-23 20:09:08.177 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------101707374095085883562725 5569
+2025-09-23 20:09:08.186 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 20:09:08.229 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 20:09:08.472 +04:00 [INF] GetAll method call! 
+2025-09-23 20:09:13.606 +04:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-23 20:09:22.176 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 13940.5115ms
+2025-09-23 20:09:22.179 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 20:09:22.185 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: User data is null!
+   at P144NLayerApp.BusinessLayer.Impl.ProductService.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.BusinessLayer\Impl\ProductService.cs:line 65
+   at P144NLayerApp.API.Controllers.ProductController.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-23 20:09:33.756 +04:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.NotImplementedException: The method or operation is not implemented.
+   at P144NLayerApp.API.GlobalException.ExceptionHandling.TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken) in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\GlobalException\ExceptionHandling.cs:line 9
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2025-09-23 20:09:33.803 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: User data is null!
+   at P144NLayerApp.BusinessLayer.Impl.ProductService.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.BusinessLayer\Impl\ProductService.cs:line 65
+   at P144NLayerApp.API.Controllers.ProductController.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-23 20:09:33.874 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 500 null application/problem+json 25698.0804ms
+2025-09-23 20:10:01.427 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------373544640220156537787091 5569
+2025-09-23 20:10:01.431 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 4.3148ms
+2025-09-23 20:10:01.435 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------697814377248874335889609 5569
+2025-09-23 20:10:01.438 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 20:10:01.440 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 20:10:01.482 +04:00 [INF] GetAll method call! 
+2025-09-23 20:10:06.725 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 5282.4476ms
+2025-09-23 20:10:06.728 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 20:10:06.731 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: User data is null!
+   at P144NLayerApp.BusinessLayer.Impl.ProductService.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.BusinessLayer\Impl\ProductService.cs:line 65
+   at P144NLayerApp.API.Controllers.ProductController.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-23 20:11:45.952 +04:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.NotImplementedException: The method or operation is not implemented.
+   at P144NLayerApp.API.GlobalException.ExceptionHandling.TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken) in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\GlobalException\ExceptionHandling.cs:line 9
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2025-09-23 20:11:45.969 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: User data is null!
+   at P144NLayerApp.BusinessLayer.Impl.ProductService.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.BusinessLayer\Impl\ProductService.cs:line 65
+   at P144NLayerApp.API.Controllers.ProductController.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-23 20:11:45.976 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 500 null application/problem+json 104540.9644ms
+2025-09-23 20:12:26.673 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 20:12:26.722 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 20:12:26.726 +04:00 [INF] Hosting environment: Development
+2025-09-23 20:12:26.769 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 20:12:26.954 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 298.1665ms
+2025-09-23 20:12:26.963 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 20:12:29.808 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------987691148643944691029016 5569
+2025-09-23 20:12:29.840 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 33.6645ms
+2025-09-23 20:12:29.857 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------440377109154649507708826 5569
+2025-09-23 20:12:29.867 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 20:12:29.913 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 20:12:30.182 +04:00 [INF] GetAll method call! 
+2025-09-23 20:12:35.524 +04:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-23 20:12:40.933 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 11013.549ms
+2025-09-23 20:12:40.938 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-23 20:12:40.945 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: User data is null!
+   at P144NLayerApp.BusinessLayer.Impl.ProductService.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.BusinessLayer\Impl\ProductService.cs:line 65
+   at P144NLayerApp.API.Controllers.ProductController.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-23 20:12:46.648 +04:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.NotImplementedException: The method or operation is not implemented.
+   at P144NLayerApp.API.GlobalException.ExceptionHandling.TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken) in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\GlobalException\ExceptionHandling.cs:line 9
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2025-09-23 20:12:46.656 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: User data is null!
+   at P144NLayerApp.BusinessLayer.Impl.ProductService.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.BusinessLayer\Impl\ProductService.cs:line 65
+   at P144NLayerApp.API.Controllers.ProductController.GetAll() in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-23 20:12:46.721 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 500 null application/problem+json 16864.8388ms
+2025-09-23 20:12:52.406 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:59357/api/Product/Create - multipart/form-data; boundary=--------------------------286247222728393956953562 49463
+2025-09-23 20:12:52.409 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:59357/api/Product/Create - 307 null null 3.8886ms
+2025-09-23 20:12:52.412 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create - multipart/form-data; boundary=--------------------------683754870332324350563266 49463
+2025-09-23 20:12:52.415 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-23 20:12:52.431 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 20:12:57.420 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API) in 4980.4304ms
+2025-09-23 20:12:57.423 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-23 20:12:57.426 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Model is not supperted
+   at P144NLayerApp.API.Controllers.ProductController.Create(ProductPostDto product) in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-23 20:16:09.582 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 20:16:09.656 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 20:16:09.659 +04:00 [INF] Hosting environment: Development
+2025-09-23 20:16:09.661 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 20:16:09.796 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 225.1297ms
+2025-09-23 20:16:09.809 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 20:16:14.008 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:59357/api/Product/Create - multipart/form-data; boundary=--------------------------076894489367934837148135 49463
+2025-09-23 20:16:14.040 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:59357/api/Product/Create - 307 null null 32.6308ms
+2025-09-23 20:16:14.060 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create - multipart/form-data; boundary=--------------------------433054601628323728904108 49463
+2025-09-23 20:16:14.069 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-23 20:16:14.114 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 20:16:17.507 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API) in 3387.7613ms
+2025-09-23 20:16:17.511 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-23 20:16:17.516 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Model is not supperted
+   at P144NLayerApp.API.Controllers.ProductController.Create(ProductPostDto product) in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-23 20:16:17.546 +04:00 [ERR] Model is not supperted
+2025-09-23 20:16:17.558 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44311/api/Product/Create - 400 null null 3497.8238ms
+2025-09-23 20:18:19.172 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 20:18:19.205 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 20:18:19.209 +04:00 [INF] Hosting environment: Development
+2025-09-23 20:18:19.211 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 20:18:19.401 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 236.0192ms
+2025-09-23 20:18:19.422 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 20:18:40.543 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:59357/api/Product/Create? - multipart/form-data; boundary=--------------------------686159554610255172102302 49463
+2025-09-23 20:18:40.595 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:59357/api/Product/Create? - 307 null null 53.3174ms
+2025-09-23 20:18:40.611 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create? - multipart/form-data; boundary=--------------------------800332865488860746229839 49463
+2025-09-23 20:18:40.622 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-23 20:18:40.687 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 20:18:43.986 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API) in 3290.3416ms
+2025-09-23 20:18:43.990 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-23 20:18:43.995 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Model is not suppertedName : Iphone 17 Teker edition pro max,IsActive : True
+   at P144NLayerApp.API.Controllers.ProductController.Create(ProductPostDto product) in D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API\Controllers\ProductController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-23 20:18:44.038 +04:00 [ERR] Model is not suppertedName : Iphone 17 Teker edition pro max,IsActive : True
+2025-09-23 20:18:44.051 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44311/api/Product/Create? - 400 null null 3439.9806ms
+2025-09-23 20:20:54.848 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 20:20:55.033 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 20:20:55.036 +04:00 [INF] Hosting environment: Development
+2025-09-23 20:20:55.039 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 20:20:55.148 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 309.4499ms
+2025-09-23 20:20:55.161 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 20:20:58.624 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:59357/api/Product/Create? - multipart/form-data; boundary=--------------------------401751037177970354642591 49463
+2025-09-23 20:20:58.671 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:59357/api/Product/Create? - 307 null null 48.1187ms
+2025-09-23 20:20:58.694 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create? - multipart/form-data; boundary=--------------------------946243396296412780486459 49463
+2025-09-23 20:20:58.702 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-23 20:20:58.747 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-23 20:21:42.281 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-23 20:21:42.305 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 20:21:42.312 +04:00 [INF] Hosting environment: Development
+2025-09-23 20:21:42.315 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-23 20:21:42.464 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 192.3645ms
+2025-09-23 20:21:42.479 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-23 20:21:48.272 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:59357/api/Product/Create? - multipart/form-data; boundary=--------------------------943350632555815162614582 49463
+2025-09-23 20:21:48.301 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:59357/api/Product/Create? - 307 null null 29.7403ms
+2025-09-23 20:21:48.316 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create? - multipart/form-data; boundary=--------------------------516456989527396419797145 49463
+2025-09-23 20:21:48.322 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-23 20:21:48.367 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).

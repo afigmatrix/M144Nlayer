@@ -12,5 +12,12 @@ namespace P144NLayerApp.BusinessLayer.DTO
         public string Name { get; set; }
         public bool isActive { get; set; }
         public IFormFile Image { get; set; }
+
+        public override string ToString()
+        {
+            return "Name = " + Name;
+        }
+
+        override 
     }
 }

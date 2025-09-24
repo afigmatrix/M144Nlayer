@@ -62,6 +62,7 @@ namespace P144NLayerApp.BusinessLayer.Impl
 
          //   var data = (List<Product>)_memory.Get(cacheName);
             var response = _mapper.Map<List<ProductGetAllDto>>(productEntityList);
+            throw new NullReferenceException("User data is null!");
             return response;
         }
 
