@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace P144NLayerApp.DAL.Entity
 {
-    public class Product : BaseEntity
+    public class BaseEntity
     {
-        public string Name { get; set; }
-        public bool isActive { get; set; }
-        public string ImagePath { get; set; }
+        public int Id { get; set; }
     }
 }

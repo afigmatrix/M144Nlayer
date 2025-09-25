@@ -14,13 +14,13 @@ namespace P144NLayerApp.BusinessLayer.Impl
 {
     public class ProductService : IProductService
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly IMemoryCache _memory;
 
-        public ProductService(IProductRepository productRepository, IMapper mapper, IMemoryCache memory)
+        public ProductService(IUnitOfWork unitOfWork, IMapper mapper, IMemoryCache memory)
         {
-            _productRepository = productRepository;
+            _unitOfWork = unitOfWork;
             _mapper = mapper;
             _memory = memory;
         }
@@ -42,9 +42,9 @@ namespace P144NLayerApp.BusinessLayer.Impl
                 isActive = product.isActive,
                 ImagePath = folderPath
             };
-
-            await _productRepository.Create(productEntity);
-            await _productRepository.Save();
+            _unitOfWork.CategoryRepository.
+            await _unitOfWork.ProductRepository.AddAsync(productEntity);
+            await _unitOfWork.Save();
 
 
         }
@@ -55,20 +55,19 @@ namespace P144NLayerApp.BusinessLayer.Impl
 
             if (!_memory.TryGetValue(cacheName, out List<Product> productEntityList))
             {
-                Thread.Sleep(4000);
-                productEntityList = await _productRepository.GetAll();
-                _memory.Set(cacheName, productEntityList, TimeSpan.FromMinutes(1));
+             //   Thread.Sleep(4000);
+                productEntityList = await _unitOfWork.ProductRepository.GetAll();
+              //  _memory.Set(cacheName, productEntityList, TimeSpan.FromMinutes(1));
             }
 
          //   var data = (List<Product>)_memory.Get(cacheName);
             var response = _mapper.Map<List<ProductGetAllDto>>(productEntityList);
-            throw new NullReferenceException("User data is null!");
             return response;
         }
 
         public async Task<byte[]> GetFileById(int id, string root)
         {
-            var product = await _productRepository.GetById(id);
+            var product = await _unitOfWork.ProductRepository.GetById(id);
             if (product is null)
             {
                 throw new Exception("Product Not Found");

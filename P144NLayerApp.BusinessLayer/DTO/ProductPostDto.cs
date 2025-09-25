@@ -18,6 +18,5 @@ namespace P144NLayerApp.BusinessLayer.DTO
             return "Name = " + Name;
         }
 
-        override 
     }
 }

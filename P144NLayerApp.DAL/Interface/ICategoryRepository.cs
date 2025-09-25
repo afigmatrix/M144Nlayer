@@ -7,8 +7,7 @@ using P144NLayerApp.DAL.Entity;
 
 namespace P144NLayerApp.DAL.Interface
 {
-    public interface IProductRepository : IGenericRepository<Product>
+    public interface ICategoryRepository : IGenericRepository<Category>
     {
-
     }
 }

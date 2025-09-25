@@ -3,19 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using P144NLayerApp.DAL.Context;
 using P144NLayerApp.DAL.Entity;
 using P144NLayerApp.DAL.Interface;
 
 namespace P144NLayerApp.DAL.Impl
 {
-    public class ProductRepository : GenericRepository<Product>, IProductRepository
+    public class CategoryRepository : GenericRepository<Category>,ICategoryRepository
     {
-
-        public ProductRepository(AppDbContext context) : base(context)
+        public CategoryRepository(AppDbContext context) : base(context)
         {
         }
-
     }
 }

@@ -16,5 +16,6 @@ namespace P144NLayerApp.DAL.Context
         }
 
         public DbSet<Product> Products{ get; set; }
+        public DbSet<Category> Categories{ get; set; }
     }
 }

@@ -21,6 +21,8 @@ namespace P144NLayerApp.DAL
                 options.UseSqlServer("Data Source=AFIQ;Initial Catalog=M144NLayer;Integrated Security=true;Trusted_Connection=true;TrustServerCertificate=true;");
             });
 
+            services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
             services.AddScoped<IProductRepository, ProductRepository>();
         }
     }

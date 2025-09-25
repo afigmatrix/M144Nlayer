@@ -492,3 +492,196 @@ System.NotSupportedException: Model is not suppertedName : Iphone 17 Teker editi
 2025-09-23 20:21:48.316 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create? - multipart/form-data; boundary=--------------------------516456989527396419797145 49463
 2025-09-23 20:21:48.322 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
 2025-09-23 20:21:48.367 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:40:29.660 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 19:40:29.630 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-25 19:40:29.723 +04:00 [INF] Hosting environment: Development
+2025-09-25 19:40:29.727 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-25 19:40:30.120 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 504.3309ms
+2025-09-25 19:40:30.130 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-25 19:40:36.684 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------848234630357531002587636 5569
+2025-09-25 19:40:36.721 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 37.4213ms
+2025-09-25 19:40:36.758 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------401028537347005875105926 5569
+2025-09-25 19:40:36.773 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-25 19:40:36.845 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:40:40.427 +04:00 [INF] GetAll method call! 
+2025-09-25 19:42:17.449 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-25 19:42:17.485 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 19:42:17.488 +04:00 [INF] Hosting environment: Development
+2025-09-25 19:42:17.490 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-25 19:42:17.669 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 226.8596ms
+2025-09-25 19:42:17.695 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-25 19:42:30.907 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------133554639908894470350599 5569
+2025-09-25 19:42:30.942 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 36.394ms
+2025-09-25 19:42:30.989 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------349996369355987521523120 5569
+2025-09-25 19:42:30.995 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-25 19:42:31.063 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:42:31.771 +04:00 [INF] GetAll method call! 
+2025-09-25 19:42:41.312 +04:00 [INF] Executed DbCommand (555ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-25 19:43:02.028 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-25 19:43:02.070 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 19:43:02.100 +04:00 [INF] Hosting environment: Development
+2025-09-25 19:43:02.102 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-25 19:43:02.285 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 499 null null 267.1319ms
+2025-09-25 19:43:02.294 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 499
+2025-09-25 19:43:27.823 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-25 19:43:27.880 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 19:43:27.884 +04:00 [INF] Hosting environment: Development
+2025-09-25 19:43:27.888 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-25 19:43:28.025 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 209.0131ms
+2025-09-25 19:43:28.040 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-25 19:43:30.229 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------590427962851017822567632 5569
+2025-09-25 19:43:30.261 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 33.0688ms
+2025-09-25 19:43:30.306 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------952408293097750151889596 5569
+2025-09-25 19:43:30.312 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-25 19:43:30.342 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:43:31.165 +04:00 [INF] GetAll method call! 
+2025-09-25 19:43:31.851 +04:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-25 19:43:31.970 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[P144NLayerApp.BusinessLayer.DTO.ProductGetAllDto, P144NLayerApp.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 19:43:31.989 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 1635.1952ms
+2025-09-25 19:43:31.991 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-25 19:43:32.001 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 200 null application/json; charset=utf-8 1695.7165ms
+2025-09-25 19:43:42.483 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:59357/api/Product/Create? - multipart/form-data; boundary=--------------------------365558672903504842209025 49463
+2025-09-25 19:43:42.486 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:59357/api/Product/Create? - 307 null null 3.6634ms
+2025-09-25 19:43:42.491 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create? - multipart/form-data; boundary=--------------------------365558672903504842209025 49463
+2025-09-25 19:43:42.493 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-25 19:43:42.510 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:43:42.596 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-25 19:43:42.639 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API) in 126.2142ms
+2025-09-25 19:43:42.641 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-25 19:43:42.644 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44311/api/Product/Create? - 400 null application/problem+json; charset=utf-8 152.9486ms
+2025-09-25 19:43:59.267 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:59357/api/Product/Create? - multipart/form-data; boundary=--------------------------452099041067200381866924 418
+2025-09-25 19:43:59.270 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:59357/api/Product/Create? - 307 null null 3.8741ms
+2025-09-25 19:43:59.283 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create? - multipart/form-data; boundary=--------------------------649440684401960737193377 418
+2025-09-25 19:43:59.285 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-25 19:43:59.286 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:43:59.327 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-25 19:43:59.330 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API) in 42.0722ms
+2025-09-25 19:43:59.331 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-25 19:43:59.333 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44311/api/Product/Create? - 400 null application/problem+json; charset=utf-8 50.8646ms
+2025-09-25 19:44:07.201 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:59357/api/Product/Create? - multipart/form-data; boundary=--------------------------130340614574610835778005 479
+2025-09-25 19:44:07.208 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:59357/api/Product/Create? - 307 null null 6.6032ms
+2025-09-25 19:44:07.248 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create? - multipart/form-data; boundary=--------------------------092261402405285358967679 479
+2025-09-25 19:44:07.250 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-25 19:44:07.253 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:44:18.773 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-25 19:44:18.820 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 19:44:18.822 +04:00 [INF] Hosting environment: Development
+2025-09-25 19:44:18.823 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-25 19:44:18.967 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 202.6281ms
+2025-09-25 19:44:18.982 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-25 19:44:20.672 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:59357/api/Product/Create? - multipart/form-data; boundary=--------------------------907411516687961513953105 479
+2025-09-25 19:44:20.707 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:59357/api/Product/Create? - 307 null null 36.0221ms
+2025-09-25 19:44:20.726 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create? - multipart/form-data; boundary=--------------------------073095749224994620560305 479
+2025-09-25 19:44:20.732 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-25 19:44:20.774 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:44:22.476 +04:00 [INF] Executed DbCommand (174ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ImagePath], [Name], [isActive])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-09-25 19:44:22.538 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API) in 1758.8132ms
+2025-09-25 19:44:22.540 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-25 19:44:22.555 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44311/api/Product/Create? - 200 null null 1829.2395ms
+2025-09-25 19:44:27.586 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------647539155159265015213306 5569
+2025-09-25 19:44:27.590 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 4.1837ms
+2025-09-25 19:44:27.595 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------437254079034698225246656 5569
+2025-09-25 19:44:27.598 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-25 19:44:27.605 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:44:27.667 +04:00 [INF] GetAll method call! 
+2025-09-25 19:44:27.963 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-25 19:44:28.035 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[P144NLayerApp.BusinessLayer.DTO.ProductGetAllDto, P144NLayerApp.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 19:44:28.047 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 439.586ms
+2025-09-25 19:44:28.049 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-25 19:44:28.052 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 200 null application/json; charset=utf-8 456.8004ms
+2025-09-25 19:44:41.410 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetFileById?id=1002 - multipart/form-data; boundary=--------------------------538497287583549586365506 5569
+2025-09-25 19:44:41.413 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetFileById?id=1002 - 307 null null 3.5521ms
+2025-09-25 19:44:41.422 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetFileById?id=1002 - multipart/form-data; boundary=--------------------------995128207802907028023168 5569
+2025-09-25 19:44:41.425 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetFileById (P144NLayerApp.API)'
+2025-09-25 19:44:41.430 +04:00 [INF] Route matched with {action = "GetFileById", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFileById(Int32) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:44:41.571 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-09-25 19:44:41.581 +04:00 [INF] Executing FileContentResult, sending file with download name 'product.jpg' ...
+2025-09-25 19:44:41.590 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetFileById (P144NLayerApp.API) in 157.4737ms
+2025-09-25 19:44:41.593 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetFileById (P144NLayerApp.API)'
+2025-09-25 19:44:41.596 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetFileById?id=1002 - 200 14 image/jpeg 173.8815ms
+2025-09-25 19:56:31.506 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44311/ - null null
+2025-09-25 19:56:31.561 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 19:56:31.563 +04:00 [INF] Hosting environment: Development
+2025-09-25 19:56:31.565 +04:00 [INF] Content root path: D:\Matrix\P144\P144NLayerApp\P144NLayerApp.API
+2025-09-25 19:56:31.735 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44311/ - 404 null null 235.4446ms
+2025-09-25 19:56:31.745 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/, Response status code: 404
+2025-09-25 19:56:36.336 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetFileById?id=1002 - multipart/form-data; boundary=--------------------------475776365334693513165305 5569
+2025-09-25 19:56:36.361 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetFileById?id=1002 - 307 null null 25.7571ms
+2025-09-25 19:56:36.376 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetFileById?id=1002 - multipart/form-data; boundary=--------------------------328586068853280339701417 5569
+2025-09-25 19:56:36.382 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetFileById (P144NLayerApp.API)'
+2025-09-25 19:56:36.422 +04:00 [INF] Route matched with {action = "GetFileById", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFileById(Int32) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:56:37.861 +04:00 [INF] Executed DbCommand (61ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-09-25 19:56:37.961 +04:00 [INF] Executing FileContentResult, sending file with download name 'product.jpg' ...
+2025-09-25 19:56:37.976 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetFileById (P144NLayerApp.API) in 1548.4621ms
+2025-09-25 19:56:37.978 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetFileById (P144NLayerApp.API)'
+2025-09-25 19:56:37.987 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetFileById?id=1002 - 200 14 image/jpeg 1611.3567ms
+2025-09-25 19:56:42.730 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------537989216799417593672680 5569
+2025-09-25 19:56:42.733 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 3.0464ms
+2025-09-25 19:56:42.747 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------259506280083971213095752 5569
+2025-09-25 19:56:42.751 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-25 19:56:42.757 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:56:42.798 +04:00 [INF] GetAll method call! 
+2025-09-25 19:56:42.818 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-25 19:56:42.842 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[P144NLayerApp.BusinessLayer.DTO.ProductGetAllDto, P144NLayerApp.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 19:56:42.854 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 94.8668ms
+2025-09-25 19:56:42.856 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-25 19:56:42.859 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 200 null application/json; charset=utf-8 114.7048ms
+2025-09-25 19:56:48.893 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:59357/api/Product/Create? - multipart/form-data; boundary=--------------------------015312718580585062075716 479
+2025-09-25 19:56:48.897 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:59357/api/Product/Create? - 307 null null 3.3235ms
+2025-09-25 19:56:48.900 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44311/api/Product/Create? - multipart/form-data; boundary=--------------------------756873785024612608677409 479
+2025-09-25 19:56:48.902 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-25 19:56:48.921 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task Create(P144NLayerApp.BusinessLayer.DTO.ProductPostDto) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:56:49.095 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ImagePath], [Name], [isActive])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-09-25 19:56:49.171 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API) in 248.8728ms
+2025-09-25 19:56:49.173 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.Create (P144NLayerApp.API)'
+2025-09-25 19:56:49.175 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44311/api/Product/Create? - 200 null null 274.7503ms
+2025-09-25 19:56:53.312 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetFileById?id=1002 - multipart/form-data; boundary=--------------------------007094609520563008920294 5569
+2025-09-25 19:56:53.316 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetFileById?id=1002 - 307 null null 3.9035ms
+2025-09-25 19:56:53.322 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetFileById?id=1002 - multipart/form-data; boundary=--------------------------387868025338889604642377 5569
+2025-09-25 19:56:53.324 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetFileById (P144NLayerApp.API)'
+2025-09-25 19:56:53.326 +04:00 [INF] Route matched with {action = "GetFileById", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFileById(Int32) on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:56:53.339 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-09-25 19:56:53.343 +04:00 [INF] Executing FileContentResult, sending file with download name 'product.jpg' ...
+2025-09-25 19:56:53.345 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetFileById (P144NLayerApp.API) in 18.4037ms
+2025-09-25 19:56:53.347 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetFileById (P144NLayerApp.API)'
+2025-09-25 19:56:53.349 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetFileById?id=1002 - 200 14 image/jpeg 27.1653ms
+2025-09-25 19:56:55.884 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - multipart/form-data; boundary=--------------------------808457207124717923507328 5569
+2025-09-25 19:56:55.887 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:59357/api/Product/GetAll - 307 null null 3.4815ms
+2025-09-25 19:56:55.892 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - multipart/form-data; boundary=--------------------------693413372880987604326840 5569
+2025-09-25 19:56:55.894 +04:00 [INF] Executing endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-25 19:56:55.896 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller P144NLayerApp.API.Controllers.ProductController (P144NLayerApp.API).
+2025-09-25 19:56:55.901 +04:00 [INF] GetAll method call! 
+2025-09-25 19:56:55.911 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImagePath], [p].[Name], [p].[isActive]
+FROM [Products] AS [p]
+2025-09-25 19:56:55.918 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[P144NLayerApp.BusinessLayer.DTO.ProductGetAllDto, P144NLayerApp.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 19:56:55.922 +04:00 [INF] Executed action P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API) in 22.3026ms
+2025-09-25 19:56:55.923 +04:00 [INF] Executed endpoint 'P144NLayerApp.API.Controllers.ProductController.GetAll (P144NLayerApp.API)'
+2025-09-25 19:56:55.925 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44311/api/Product/GetAll - 200 null application/json; charset=utf-8 33.1372ms

@@ -31,7 +31,6 @@ namespace P144NLayerApp.API.Controllers
         [HttpPost]
         public async Task Create(ProductPostDto product)
         {
-            throw new NotSupportedException("Model is not supperted"+ product.ToString());
             await _productService.Create(product, _env.WebRootPath);
         }
 
